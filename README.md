@@ -3,7 +3,7 @@ public class MissingPositiveNumber {
         int n = nums.length;
 
         for (int i = 0; i < n; i++) {
-            // Place nums[i] at the correct index if it's in the range [1, n]
+            // Place nums[i] at the correct index if it's in the range [1, n ]
             while (nums[i] > 0 && nums[i] <= n && nums[nums[i] - 1] != nums[i]) {
                 int correctIndex = nums[i] - 1;
                 // Swap nums[i] and nums[correctIndex]
